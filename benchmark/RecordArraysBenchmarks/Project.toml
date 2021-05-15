@@ -1,0 +1,11 @@
+name = "RecordArraysBenchmarks"
+uuid = "bb86a686-6cd0-4b05-af2e-2fa52485208d"
+authors = ["Takafumi Arakaki <aka.tkf@gmail.com> and contributors"]
+version = "0.1.0"
+
+[deps]
+BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
+RecordArrays = "f09397d6-3230-428f-8b46-6217caaab93c"
+
+[compat]
+julia = "1"
