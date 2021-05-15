@@ -1,0 +1,13 @@
+name = "RecordArrays"
+uuid = "f09397d6-3230-428f-8b46-6217caaab93c"
+authors = ["Takafumi Arakaki <aka.tkf@gmail.com> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
