@@ -4,7 +4,7 @@ using RecordArrays
 using Test
 
 @testset "fill((a = 1, b = 2), 10)" begin
-    @testset for align in [nothing, 64]
+    @testset "$(sprint(show, align))" for align in [nothing, 64]
         A = RecordArrays.fill((a = 1, b = 2), 10; align = align)
         @test A.a == fill(1, 10)
         @test A.b == fill(2, 10)
@@ -23,7 +23,7 @@ end
 
 @testset "fill(OneValue{Union{Nothing,Int}}, 10)" begin
     Eltype = OneValue{Union{Nothing,Int}}
-    @testset for align in [nothing, 64]
+    @testset "$(sprint(show, align))" for align in [nothing, 64]
         A = RecordArrays.fill(Eltype(0), 10; align = align)
         @test A[1] === Eltype(0)
         @test A.value[1] === 0
@@ -57,7 +57,7 @@ list() = nothing
 list(x, xs...) = Node(x, list(xs...))
 
 @testset "fill(Node{Int}(...), 10)" begin
-    @testset for align in [nothing, 64]
+    @testset "$(sprint(show, align))" for align in [nothing, 64]
         A = RecordArrays.fill(list(1, 2), 10; align = align)
         @test A[1] === list(1, 2)
         @test A.head[1] === 1
