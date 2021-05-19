@@ -57,7 +57,7 @@ list() = nothing
 list(x, xs...) = Node(x, list(xs...))
 
 @testset "fill(Node{Int}(...), 10)" begin
-    @testset for align in [nothing, 64]
+    @testset "$(sprint(show, align))" for align in [nothing, 64]
         A = RecordArrays.fill(list(1, 2), 10; align = align)
         @test A[1] === list(1, 2)
         @test A.head[1] === 1
