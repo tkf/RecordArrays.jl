@@ -1,8 +1,11 @@
 # RecordArrays.jl: flexible Array-of-Structures representation for Julia
 
-**NOTE**: [StructArrays.jl](https://github.com/JuliaArrays/StructArrays.jl)
-provides the abstract array interface for Structure-of-Arrays representation
-which is much more appropriate for many performance-oriented programs.
+**NOTE**: Packages such as
+[StructArrays.jl](https://github.com/JuliaArrays/StructArrays.jl),
+[TupleVectors.jl](https://github.com/cscherrer/TupleVectors.jl), and
+[TypedTables.jl](https://github.com/JuliaData/TypedTables.jl) provide the
+abstract array interface for Structure-of-Arrays representation which is much
+more appropriate for many performance-oriented programs.
 
 RecordArrays.jl is a package for using Array-of-Structures representation with
 more control than `Array{T}`.  For example, it can be used for creating
