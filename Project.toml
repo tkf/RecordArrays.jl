@@ -1,7 +1,7 @@
 name = "RecordArrays"
 uuid = "f09397d6-3230-428f-8b46-6217caaab93c"
 authors = ["Takafumi Arakaki <aka.tkf@gmail.com> and contributors"]
-version = "0.1.0"
+version = "0.1.1-DEV"
 
 [compat]
 julia = "1"
