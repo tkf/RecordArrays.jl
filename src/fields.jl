@@ -14,7 +14,7 @@ julia> xs.a
  1
  1
  1
-````
+```
 """
 function RecordArrays.FieldArray{Field}(A::RecordArray) where {Field}
     T = fieldtype(eltype(A), Field)

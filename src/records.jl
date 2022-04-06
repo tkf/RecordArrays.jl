@@ -24,7 +24,7 @@ julia> xs
  (a = 1.0, b = 'a')
  (a = 2.0, b = 'b')
  (a = 3.0, b = 'c')
-````
+```
 """
 (RecordArrays.RecordArray, RecordArrays.RecordVector)
 
